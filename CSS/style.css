@@ -1,0 +1,282 @@
+nav{
+    background-color: #333;
+    padding: 10px;
+}
+nav .container{
+    justify-content: space-between;
+    display: flex;
+}
+nav .container img{
+    height: 30px;
+}
+ul{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: -5px;
+}
+ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+header{
+    background: url(../Data/home2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    animation: home 10s reverse infinite;
+}
+#red{
+    background-color: red;
+    height: 35vh;
+}
+#red .container{
+    display: flex;
+}
+.text{
+    width: 60%;
+    color: white;
+    padding: 50px;
+}
+.buttons{
+    width: 40%;
+    padding: 70px 0 0 70px;
+}
+#three{
+    background-color: white;
+    padding: 8px 20px;
+    color: black;
+    margin-right: 15px;
+}
+#three:hover{
+    background-color: black;
+    color: white;
+}
+#four{
+    color: white;
+    border: solid 2px white;
+    padding: 8px 20px;
+}
+#four:hover{
+    background-color: black;
+    border: none;
+}
+@keyframes home {
+    0% , 50%{
+        background: url(../Data/home2.jpg);
+        background-position: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    55% , 100%{
+        background: url(../Data/home1.jpg);
+        background-position: center;
+        height: 100vh;
+        background-size: cover;
+    }
+}
+header .container{
+    padding: 250px 0 0 150px;
+    color: white;
+}
+header .container h1{
+    font-weight: bolder;
+}
+header .container p{
+    width: 50%;
+}
+#one{
+    background-color: red;
+    padding: 8px 20px;
+    color: white;
+    margin-right: 15px;
+}
+#oneone{
+    background-color: rgb(203, 0, 0);
+    padding: 8px 25px;
+    color: white;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#one:hover{
+    background-color: black;
+}
+#oneone:hover{
+    background-color: black;
+}
+#two{
+    color: white;
+    border: solid 2px white;
+    padding: 8px 20px;
+}
+#two:hover{
+    background-color: black;
+    border: none;
+}
+#services h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.col-md-3{
+    border: 1px solid rgba(0, 0, 0, 0.365);
+    padding: 40px;  
+    transition: 1s;
+
+}
+.col-md-3:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+#projects{
+    background: linear-gradient(rgba(0, 0, 0, 0.492) , rgba(0, 0, 0, 0.206)) , url(../Data/squares_purple.webp);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    padding: 3%;
+}
+#projects h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2rem;
+}
+#team h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2rem;
+}
+.div{
+    display: flex;
+    background-color: white;
+}
+.slideshow{
+    width: 60%;
+}
+.outputs{
+    width: 40%;
+    padding: 6%;
+}
+.media{
+    width: 20px;
+    padding-top: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.me{
+    color: white ;
+    text-decoration: none;
+}
+.me:hover{
+    text-decoration: underline;
+    color: white;
+}
+#team{
+    background-color: #333;
+    box-sizing: border-box;
+    padding: 3%;
+}
+#flex{
+    display: flex;
+}
+.member{
+    width: 20%;
+    margin: auto;
+}
+.member img{
+    border-radius: 50%;
+    width: 90%;
+}
+.member h6{
+    color: white;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 57px;
+}
+.member span{
+    color: white;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-left: 47px;
+}
+.member p{
+    color: white;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-left: 10px;
+}
+#a2{
+    padding-left: 28px;
+}
+#a3{
+    padding-left: 60px;
+}
+#a4{
+    padding-left: 30px;
+}
+@media screen and (max-width : 650px) {
+    ul{
+        display: none;
+    }
+    .div{
+        flex-direction: column;
+        width: 100%;
+    }
+    .slideshow{
+        width: 100%;
+    }
+    #flex{
+        display: none;
+    }
+    .outputs{
+        width: 100%;
+    }
+    nav .container{
+        justify-content: center;
+        margin-right: -15px;
+        padding-bottom: 5px;
+    }
+    .col-md-3:hover{
+        transform: scale(.9);
+    }
+    header .container{
+        padding: 200px 0 0 10px;
+    }
+    header .container p{
+        width: 90%;
+    }
+    #red{
+        height: 60vh ;
+    }
+    #red .container{
+        display: block;
+    }
+    .text{
+        width: 100%;
+    }
+    .buttons{
+        width: 90%;
+        padding: 0 0 0 40px;
+    }
+    #three{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #four{
+        width: 100%;
+        margin: auto;
+    }
+}
